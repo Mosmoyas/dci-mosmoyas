@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;700&display=swap');
+
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+
+:root {
+    --mainColor: orangered;
+    --pColor: #a3a19e;
+    --secondColor: #3F84F6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+   
+    /* background-color: rgb(153, 143, 143); */
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+.flex-display {
+    display: flex;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/*  Start Header Section */
+header {
+
+    overflow: auto;
+    position: relative;
+    z-index: 100;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(16, 51, 39);
+
+}
+
+header nav .logo {
+    color: var(--mainColor);
+    font-size: 22px;
+    transition: .8s;
+}
+
+header nav .logo:hover {
+    /* letter-spacing: 10px; */
+    transform: scale(1.5);
+    /* font-size: 35px; */
+    font-weight: 700;
+}
+
+header nav ul li {
+    margin: 0 5px;
+}
+
+header nav ul li a {
+
+    color: white;
+    padding: 10px;
+    transition: .5s;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(42, 121, 94);
+}
+
+/* End Header Section */
+
+.main{
+    background-image: url('../images/hande-zusammen-team.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+main{
+    padding-top: 100px;
+}
+.section-up .topic{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* .section-up .content {} */
+
+.section-up .content h2 {
+    font-size: 72px;
+    width: 500px;
+}
+
+.section-up .content h2 span {
+    color: #71C21B;
+}
+
+.section-up .content p {
+    line-height: 1.6;
+    color: #a3a19e;
+    font-size: 23px;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.section-up .image {
+    position: relative;
+    align-self: center;
+}
+
+/* .section-up img {} */
+
+.section-up .team{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-up .team .memmber {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    /* gap: 35px; */
+    margin: 30px 20px;
+    padding: 10px;
+
+
+}
+
+.section-up .team figure {
+    padding: 8px;
+    transition: outline .4s;
+    border-radius: 50%;
+}
+
+.section-up .team .memmber figure:hover {
+    outline: 6px solid #71C21B;
+}
+
+.section-up .team figure img {
+    border-radius: 50%;
+    width: 100px;
+    transition: .4s;
+    filter: grayscale(1.0);
+
+}
+
+.section-up .team figure img:hover {
+    filter: grayscale(0);
+
+}
+
+.section-up .team .memmber .icons {
+    text-align: center;
+}
+
+.section-up .team .memmber .infos {
+    margin: 20px;
+
+}
+
+.section-up .team .memmber .infos h2 {
+    font-size: 28px;
+    color: #71C21B;
+}
+
+.section-up .team .memmber .infos p {
+    font-size: 20px;
+    color: rgb(121, 132, 100);
+}
+
+
+/*  Start Footer Section */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: rgba(41, 40, 40, 0.685);
+    gap: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .impressum {
+    margin-top: 5px;
+    min-width: 50%;
+}
+
+@media (max-width:676px) {
+
+    .footer {
+        padding: 0 20px 20px;
+    }
+}
+
+.footer .impressum li {
+    margin-top: 10px;
+    padding-bottom: 8px;
+
+
+}
+
+.footer .impressum li:hover {
+    border-bottom: 1px solid;
+    color: white;
+    width: fit-content;
+
+}
+
+.footer a {
+    color: white;
+}
+
+.footer .market ul {
+    margin-top: 20px;
+    display: flex;
+}
+
+@media (max-width:676px) {
+
+    .footer .market ul {
+        flex-direction: column;
+
+    }
+
+    .footer .market ul li {
+        margin-bottom: 20px;
+    }
+}
+
+
+.footer .market ul li a {
+    margin-right: 10px;
+    padding: 0 10px;
+    background-color: azure;
+    color: #174c7a;
+    width: 120px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.footer .market ul li a:hover {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.footer .market .media i {
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.footer .market .media i:hover {
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 3px;
+}
+
+.footer .market p {
+    width: 70%;
+}
+
+/*  END Footer Section */
